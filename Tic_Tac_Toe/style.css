@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+    background-image: url('img.jpg');
+    background-size: cover;
+}
+
+p {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 1000;
+    font-size: 11vmin;
+    font-style: normal;
+    text-shadow: 2px 2px 4px #000;
+    animation: color 4s infinite;
+}
+
+@keyframes color {
+    0% {
+        color: rgb(243, 160, 5)
+    }
+    10% {
+        color: rgb(215, 142, 8)
+    }
+    20% {
+        color: rgb(193, 129, 10)
+    }
+    30% {
+        color: rgb(157, 121, 11)
+    }
+    40% {
+        color: rgb(163, 60, 12)
+    }
+    50% {
+        color: rgb(234, 113, 14)
+    }
+    60% {
+        color: rgb(195, 91, 11)
+    }
+    70% {
+        color: rgb(225, 76, 12)
+    }
+    80% {
+        color: rgb(205, 99, 12)
+    }
+    90% {
+        color: rgb(182, 65, 15)
+    }
+    100% {
+        color: rgb(243, 22, 11)
+    }
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    font-weight: 600;
+    color: #fafafa;
+    background-color: #9a109a;
+}
+
+#reset-btn {
+    padding: 0.5rem;
+    font-size: 1.75rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 0.2rem;
+    border: none;
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "BLED" 0, "SCAN" 0;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.75rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 0.2rem;
+    border: none;
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "BLED" 0, "SCAN" 0;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
